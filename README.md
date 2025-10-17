@@ -12,6 +12,5 @@ Building a mini whatsapp app at our TechCrush bootcamp for backend developers.
 - Frontend & Backend Connection - react
 - Testing - jest
 - Database - sequelize & mysql2
-
-PS C:\Users\HP\Documents\Mini-Whatsapp-App> npm i bcryptjs jsonwebtoken express-validator nodemailer mnpm i bcryptjs jsonwebtoken express-validator nodemailer 
-mysql2 sequelize ejs
+- Error handling
+- RBAC(Role Based Access Control) - *Authorization*

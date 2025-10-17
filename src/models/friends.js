@@ -1,0 +1,32 @@
+import sequelize from "../config/db.js";
+import { DataTypes } from "sequelize";
+
+const Friend = sequelize.define(
+  "Friend",
+  {
+    user_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    friend_id: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+    },
+    status: {
+        type: DataTypes.ENUM("pending", "accepted", "rejected"),
+        defaultValue: "pending",
+    },
+  },
+  {
+    timestamps: true,
+    indexes: [
+      {
+        unique: true,
+        fields: ["userid", "friendid"],
+      },
+    ],
+  }
+); 
+
+
+export default Friend;
