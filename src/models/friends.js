@@ -22,7 +22,7 @@ const Friend = sequelize.define(
     indexes: [
       {
         unique: true,
-        fields: ["userid", "friendid"],
+        fields: ["user_id", "friend_id"],
       },
     ],
   }
